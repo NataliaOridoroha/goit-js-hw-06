@@ -7,15 +7,22 @@ const ingredients = [
   'Condiments',
 ];
 
-const navItemEl = document.createElement('li');
-navLinkEl.classList.add('item');
+const titleEl = document.createElement('li');
+console.log(titleEl);
 
-const navLinkEl = document.createElement('a');
-navLinkEl.textContent = 'Potatoes';
 
-navItemEl.appendChild(navLinkEl);
-console.log(navItemEl);
+// navLinkEl.classList.add('item');
 
-const navEl = document.querySelector('ingredients');
+// const navLinkEl = document.createElement('a');
+// navLinkEl.textContent = 'Potatoes';
 
-navEl.appendChild(navItemEl);
+// navItemEl.appendChild(navLinkEl);
+// console.log(navItemEl);
+
+// const navEl = document.querySelector('ingredients');
+
+// navEl.appendChild(...navEl);
+
+// console.log(navEl);
+
+
