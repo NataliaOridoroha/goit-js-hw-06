@@ -1,7 +1,10 @@
-var form = document.getElementById("validation-input");
-form.addEventListener("focus", function( event ) {
-  event.target.style.borderColor = "validation-input.valid";
-}, true);
-form.addEventListener("blur", function( event ) {
-  event.target.style.borderColor = "validation-input.invalid";
-}, true);
+document.getElementById("validation-input").onblur = function() {
+    console.log(this.value.length);
+    if (this.getAttribute('data-length') > this.value.length) { 
+      this.classList.remove('valid');
+      this.classList.add('invalid');
+    } else {
+      this.classList.remove('invalid');
+      this.classList.add('valid');
+    }
+  };
