@@ -8,7 +8,7 @@ const refs = {
 
 function createBoxes(amount) {
   for(var i = 0; i < amount; i++) {
-    var elem = document.createElement('div');
+    let elem = document.createElement('div');
     
     elem.style.width = 30 + (10 * i)+'px';
     elem.style.height = 30+'px';
@@ -19,7 +19,7 @@ function createBoxes(amount) {
 }
 
 refs.createEl.addEventListener('click', function() {
-  var amount = refs.amountEl.value;
+  let amount = refs.amountEl.value;
   if(amount > 0) {
     createBoxes(amount);
   }
